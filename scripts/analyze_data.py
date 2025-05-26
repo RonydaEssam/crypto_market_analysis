@@ -1,5 +1,7 @@
 import pandas as pd
 import glob
+import streamlit as st
+from matplotlib import pyplot as plt
 
 # load ans sort csv files
 csv_files = glob.glob("data/prices_*.csv")
