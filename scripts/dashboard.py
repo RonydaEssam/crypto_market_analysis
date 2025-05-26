@@ -18,3 +18,16 @@ st.title(f"{selected_coin}  Price Dashboard")
 
 st.subheader("Price Over Time")
 st.line_chart(coin_df.set_index('date')['price_usd'])
+
+#barchart for daily percentage change
+st.subheader("Daily % Change")
+st.bar_chart(coin_df.set_index('date')['percent_change_24h'])
+
+#summary stats
+st.subheader("Summary Stats")
+st.write({
+    "Max Price": coin_df["price_usd"].max(),
+    "Min Price": coin_df["price_usd"].min(),
+    "Average Price": coin_df["price_usd"].mean(),
+    "Volatility (Range)": coin_df["price_usd"].max() - coin_df["price_usd"].min()
+})
