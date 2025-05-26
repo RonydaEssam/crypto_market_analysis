@@ -3,7 +3,7 @@ import streamlit as st
 from matplotlib import pyplot as plt
 
 #loading the data to pandas df
-df = pd.read_csv("../data/combined_data.csv")
+df = pd.read_csv("..\data\combined_data.csv")
 
 #creating streamlit sidebar
 st.sidebar.title("Crypto Dashboard")
