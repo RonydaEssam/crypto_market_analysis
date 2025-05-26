@@ -39,8 +39,17 @@ for coin in data['data']:
     coins.append(coin_info)
 
 df = pd.DataFrame(coins)
-print(df.head())
 
 today = datetime.today().strftime('%Y-%m-%d')
+df.insert(0, "date", today)
 filename = f"D:/0.0 Data Engineering/Projects/Crypto_market_analysis/crypto_market_analysis/data/prices_{today}.csv"
 df.to_csv(filename, index=False)
+
+'''
+df1 = pd.read_csv("..\data\prices_2025-05-25.csv")
+dated = "2025-05-25"
+df1.insert(0, "date", dated)
+df1.to_csv("..\data\prices_2025-05-25.csv")
+'''
+
+print(df.describe())

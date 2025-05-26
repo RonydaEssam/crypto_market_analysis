@@ -1,10 +1,8 @@
 import pandas as pd
 import glob
-import streamlit as st
-from matplotlib import pyplot as plt
 
-# load ans sort csv files
-csv_files = glob.glob("data/prices_*.csv")
+# load and sort csv files
+csv_files = glob.glob("..\data\prices_*.csv")
 csv_files.sort()
 
 all_data = []
@@ -30,3 +28,5 @@ print(f"Price Change = {btc_price_change:,.2f}")
 btc_percent_change = (btc_price_change / btc_price_day1) * 100
 print(f"Percentage Change = {btc_percent_change:,.2f}%")
 
+combined_csv = combined_df.to_csv("..\data\combined_data.csv")
+print("Combined data file is created.")
