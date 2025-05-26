@@ -30,4 +30,4 @@ st.write({
     "Min Price": coin_df["price_usd"].min(),
     "Average Price": coin_df["price_usd"].mean(),
     "Volatility (Range)": coin_df["price_usd"].max() - coin_df["price_usd"].min()
-})
+}) 
