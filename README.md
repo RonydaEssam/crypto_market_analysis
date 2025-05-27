@@ -1,5 +1,5 @@
 # crypto_market_analysis
-Real-time cryptocurrency market analysis dashboard using Python, Pandas, and SQL
+Real-time cryptocurrency market analysis dashboard using Python, Pandas, and Streamlit
 
 ## Tools & Technologies
 - Python
@@ -13,5 +13,5 @@ This project is under development. It will include:
 - Data cleaning and transformation
 - Visual dashboards
 
-## Link forthe dashboard
+## Link for the dashboard
 [Dahboard](https://cryptomarketanalysis-daczvbhn5h6yc44nnvntj9.streamlit.app/)
